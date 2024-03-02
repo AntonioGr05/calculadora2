@@ -1,0 +1,14 @@
+{{page-title "Calculadora2"}}
+
+<div>
+  <input type="number" value={{this.variable2}} {{on "input" this.tomar}}>
+  <input type="number" value={{this.variable3}} {{on "input" this.tomar2}}>
+  Valor de la variable: {{this.resultado}}
+  <button type="button" {{on "click" this.sumar}}>sumar</button>
+  <button type="button" {{on "click" this.restar}}>restar</button>
+  <button type="button" {{on "click" this.multiplicar}}>multiplicar</button>
+  <button type="button" {{on "click" this.dividir}}>dividir</button>
+  <button type="button" {{on "click" this.limpiar}}>limpiar</button>
+</div>
+
+{{outlet}}
